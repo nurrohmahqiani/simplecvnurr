@@ -1,0 +1,98 @@
+:root {
+  --primary: #4d3e2d;
+  --bg: #f2efed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #939986;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(147, 153, 134, 0.8);
+  border-bottom: 1px solid #4d3e2d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fcfbfb;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fcf4f4;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #495668;
+}
+
+.navbar .navbar-nav a::after {
+  content: " ";
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.5s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fafafa;
+  margin: 0 0.3rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+img {
+  float: right;
+  width: 200px;
+  height: 300px;
+  margin-left: 15px;
+}
+.comment {
+  padding-top: 1.5rem;
+  border: 1.5px solid #dddddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.biru {
+  background-color: rgb(149, 145, 128);
+}
+
+/* .hero {
+  margin-top: 5rem;
+} */
